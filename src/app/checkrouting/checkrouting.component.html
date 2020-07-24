@@ -1,0 +1,51 @@
+<div class="container">
+
+    <h2 style="text-align: center;">{{e.firstname}}'s FeedBack</h2>
+    <hr>
+
+    ID: {{e.id}}
+    <br>
+
+    Firstname: {{e.firstname}}
+    <br>
+    Lirstname: {{e.lastname}}
+    <br>
+    <br>
+    <br>
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <label style="font-weight: bold;">Week 1 Feedback:</label>
+            <textarea disabled rows="12" cols="34">
+                {{e.firstname}} is a very Hard Working student. As we know that he is from Mechanical Backgraound but still he is working very hard to cope-up with rest students and he is performing well.
+                He is completing the assignments and submitting them on regular basis.
+            </textarea>
+        </div>
+        <div class="col-md-3">
+            <label style="font-weight: bold;">Week 2 Feedback:</label> 
+            <textarea disabled rows="12" cols="34">
+                {{e.firstname}} is a very Hard Working student. As we know that he is from Mechanical Backgraound but still he is working very hard to cope-up with rest students and he is performing well.
+                He is completing the assignments and submitting them on regular basis.
+            </textarea>
+        </div>
+        <div class="col-md-3">
+            <label style="font-weight: bold;">Week 3 Feedback:</label>
+            <textarea disabled rows="12" cols="34">
+                {{e.firstname}} is a very Hard Working student. As we know that he is from Mechanical Backgraound but still he is working very hard to cope-up with rest students and he is performing well.
+                He is completing the assignments and submitting them on regular basis.
+            </textarea>
+        </div>
+        <div class="col-md-3">
+            <label style="font-weight: bold;">Week 4 Feedback:</label>
+            <textarea rows="12" cols="34" placeholder="Not yet Provided"></textarea>
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <button type="button" class="btn btn-success btn-md mr-2" routerLink="/test">Save</button>
+            <button type="button" class="btn btn-danger btn-md mr-2" (click)="onCancel()">Cancel</button>
+        </div>
+    </div>
+   
+</div>

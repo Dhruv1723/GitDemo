@@ -1,0 +1,50 @@
+<div class="container">
+    <h2 class="text-secondary text-center">Welcome to Test Component</h2>
+    <hr>
+  
+    <div style="text-align: center;">
+      <h4 class="text-info">Displaying Employee Data</h4>
+      <div></div>
+      <table class="table table-bordered">
+        <thead> 
+          <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Course</th>
+            <th>View Performance Report</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let e of employeedata">
+            <td> {{ e.id }} </td>
+            <td> {{ e.firstname }} </td>
+            <td> {{ e.lastname }} </td>
+            <td> {{ e.course }} </td>
+            <td><button type="button" class="btn btn-primary" (click)="onClick(e)" >View Performance</button></td>
+  
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pic">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <label>Name</label>
+    <input type="text" name="name">
+    <br>
+    
+    <label>Email</label>
+    <input type="email" name="name">
+    <br>
+    
+    <button type="button" class="btn btn-primary" (click)="onClick()">Check Routing</button>
+    <a routerLink="/checkrouting"><button type="button" class="btn btn-primary">check Routing</button></a>
+</div> -->
+

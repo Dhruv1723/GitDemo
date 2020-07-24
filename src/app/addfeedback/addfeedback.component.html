@@ -1,0 +1,87 @@
+<div class="container-fluid">
+<div class="container">
+    <h2 style="text-align: center; margin-top: 25px;">Add FeedBack for {{e1.firstname}}</h2>
+    <hr>
+
+    <div class="table" style="border-radius: 10px; border: 1px solid gray; padding: 23px;">
+
+        <form>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label" style="font-weight: bold;">ID: </label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="{{ e1.id }}">
+                </div>
+            </div>    
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label" style="font-weight: bold;">First Name: </label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="{{ e1.firstname }}">
+                </div>
+            </div>    
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label" style="font-weight: bold;">Last Name: </label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="{{ e1.lastname }}">
+                    </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="Week" class="col-sm-2 col-form-label" style="font-weight: bold;">Select Week: </label>
+                <div class="col-sm-10">
+                    <select class="custom-select" id="inputGroupSelect01" style="max-width: 250px;">
+                        <option selected>Choose...</option>
+                        <option value="w1">Week 1</option>
+                        <option value="w2">Week 2</option>
+                        <option value="w3">Week 3</option>
+                        <option value="w4">Week 4</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label" style="font-weight: bold;">Feedback: </label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="inputPassword" placeholder="Your FeedBack" rows="8" style="max-width: 500px;"></textarea>
+                    </div>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <button type="button" class="btn btn-primary mr-2" (click)="onSave()">Save</button>
+                <button type="button" class="btn btn-danger btn-md mr-2" (click)="onCancel()">Cancel</button>
+            </div>
+        </form>
+
+        <!--  <label style="font-weight: bold;">ID:</label> {{e1.id}}
+        <br>
+
+        <label style="font-weight: bold;">Firstname:</label> {{e1.firstname}}
+        <br>
+        <label style="font-weight: bold;">Lirstname:</label> {{e1.lastname}}
+        <br>
+        <br>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Select Week: </label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01" style="max-width: 250px;">
+                <option selected>Choose...</option>
+                <option value="w1">Week 1</option>
+                <option value="w2">Week 2</option>
+                <option value="w3">Week 3</option>
+                <option value="w4">Week 4</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-sm-3" for="Feedback" style="font-weight: bold;">Feedback: </label>
+            <div class="col-sm-9">
+                <textarea rows="8" cols="56"></textarea>
+            </div>
+        </div> -->
+
+
+
+    </div>
+
+</div>
+</div>
